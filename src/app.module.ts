@@ -10,11 +10,11 @@ import { Car } from './car/car.entity';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
-      port: 5432,
-      username: 'postgres',
-      password: 'admin123',
-      database: 'nest-train',
+      host: 'ur_host',
+      port: 'ur_port',
+      username: 'ur_username',
+      password: 'ur_password',
+      database: 'ur_database',
       entities: [User, Car],
       synchronize: true,
     }),
